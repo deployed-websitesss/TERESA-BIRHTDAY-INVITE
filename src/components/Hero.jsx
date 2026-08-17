@@ -5,8 +5,8 @@ const Hero = forwardRef(function Hero({ hero, celebrant, onAnchor }, ref) {
 		<section className="hero" id="top" ref={ref} data-parallax-scope>
 			<div className="hero__media" aria-hidden="true">
 				<img
-					src="/assets/hero-sea-1800.jpg"
-					srcSet="/assets/hero-sea-1000.jpg 1000w, /assets/hero-sea-1800.jpg 1800w"
+					src={`${import.meta.env.BASE_URL}assets/hero-sea-1800.jpg`}
+					srcSet={`${import.meta.env.BASE_URL}assets/hero-sea-1000.jpg 1000w, ${import.meta.env.BASE_URL}assets/hero-sea-1800.jpg 1800w`}
 					sizes="100vw"
 					width="1808"
 					height="768"

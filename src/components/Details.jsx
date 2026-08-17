@@ -23,8 +23,8 @@ export default function Details({ details }) {
 				<figure className="details__figure" data-reveal>
 					<div className="details__frame">
 						<img
-							src="/assets/teak-cleat-900.jpg"
-							srcSet="/assets/teak-cleat-560.jpg 560w, /assets/teak-cleat-900.jpg 900w"
+							src={`${import.meta.env.BASE_URL}assets/teak-cleat-900.jpg`}
+							srcSet={`${import.meta.env.BASE_URL}assets/teak-cleat-560.jpg 560w, ${import.meta.env.BASE_URL}assets/teak-cleat-900.jpg 900w`}							
 							sizes="(min-width: 960px) 30vw, 100vw"
 							width="912"
 							height="1344"
